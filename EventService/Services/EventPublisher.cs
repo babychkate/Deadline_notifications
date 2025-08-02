@@ -10,7 +10,7 @@ namespace EventService.Services
     {
         public void PublishEvent(Event ev)
         {
-            var factory = new ConnectionFactory() { HostName = "rabbitmq" };
+            var factory = new ConnectionFactory() { HostName = "localhost" };
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
 

@@ -6,6 +6,7 @@ namespace EventService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+
     public class EventController : ControllerBase
     {
         private readonly EventPublisher _publisher = new();
